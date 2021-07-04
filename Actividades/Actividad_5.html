@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <title>Actividad 5</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="estilos_ac.css">
+        <script src="funcion.js"></script>
+    </head>
+
+    <body>
+        <div class="bg text-white">
+            <h3>Máquina virtual</h3>
+            <div class="container-fluid">
+                <h4>¿Qué es una Máquina Virtual (VM)?</h4>
+                <p>
+                    Una máquina virtual es una representación virtual o emulación de un sistema físico. A menudo se les
+                    referencia como "invitado" mientras la máquina física en la que se ejecutan se conoce como el
+                    "host".
+                </p>
+                <p>
+                    La virtualización permite crear varias máquinas virtuales, cada una con su propio sistema operativo
+                    (SO)
+                    y aplicaciones,
+                    en una única máquina física. Una máquina virtual no puede interactuar directamente con un sistema
+                    físico. En su lugar,
+                    necesita una capa de software ligera, llamada hipervisor para coordinar entre ella y el hardware
+                    físico
+                    subyacente. El
+                    hipervisor asigna recursos de computación físico, como procesadores, memoria y almacenamiento, a
+                    cada
+                    máquina virtual.
+                    Mantiene cada máquina virtual separada de las otras para que no interfieran entre sí.
+                </p>
+                <p>
+                    Aunque esta tecnología puede ser conocida con muchos nombres, incluido servidor virtual, instancia
+                    de
+                    servidor virtual
+                    (VSI) y servidor privado virtual (VPS), este artículo simplemente se referirá a ellas como máquinas
+                    virtuales.
+                </p>
+            </div>
+            <div class="container-fluid">
+                <h3>¿Como se crean las Máquinas Virtuales?</h3>
+                <p>
+                    Las instrucciones siguientes mostrarán cómo crear una máquina virtual en un host con el sistema
+                    operativo Kalo Linux Rolling utilizando la herramienta VirtualBox:
+                </p>
+                <strong>
+                    1.- Decargar el paquete de la pagina oficial https://www.virtualbox.org/wiki/Linux_Downloads
+                </strong><br />
+                <p>
+                    En este caso Kali esta basado en debian, por lo que descargaremos el paquete para debian 10 (la
+                    ultima version estable)
+                </p>
+                <strong>
+                    2.- Una vez descargado en una terminal accedemos a la carpeta donde guardamos el paquete
+                </strong>
+                <img src="Imagenes/A5_T.png" alt="carpeta contenedora"><br /><br />
+                <strong>3.- Ejecutamos el siguiente codigo para instalarlo</strong><br /><br />
+                <input type="text" disabled="true" value="sudo dpkg -i virtualbox.deb" class="input_co"><br /><br />
+                <img src="Imagenes/A5_T2.png" alt="Instalacion de virtualbox">
+                <p>Con esto ya tebemos la aplicacion instalada, ahora la ejecutamos (se crea un lanzador en el menu)</p>
+                <strong>4.- Añadir la máquina virtual</strong><br /><br />
+                <img src="Imagenes/A5_T3.png" alt="Pagina de inicio" width="80%" height="80%"> <br /><br />
+                <p>Seleccionamos el boton azul (nueva)</p><br />
+                <img src="Imagenes/A5_T4.png" alt="Formulario de nueva" width="80%" height="80%"><br />
+                <p>En esta pantalla llenamos los datos basicos de la maquina, al terminar seleccionamos siguiente</p>
+                <br />
+                <img src="Imagenes/A5_T5.png" alt="Asignasion de ram" width="80%" height="80%"><br />
+                <p>En este caso le asignare solo 1GB, al terminar seleccionamos siguiente</p>
+                <img src="Imagenes/A5_T6.png" alt="Disco duro" width="80%" height="80%"><br />
+                <p>En esta pantalla tenemos que crear un disco duro virtual para ser usada en la maquina, al seleccionar
+                    crear</p><br />
+                <img src="Imagenes/A5_T7.png" alt="Tipo de disco duro" width="80%" height="80%"><br />
+                <p>En esta ventana dejamos la configuracion predeterminada y seleccionamos siguiente</p>
+                <img src="Imagenes/A5_T8.png" alt="Tamaño de disco duro" width="80%" height="80%"><br />
+                <p>En esta ventana seleccionamos el tamaño del disco duro virtual, yo prefiero dejarlo en dinamico, para
+                    no tener espacio ocupado en el host y que en la maquina virtual sea libre y no este utilizado, o se
+                    puede seleccionar un tamaño fijo </p><br />
+                <img src="Imagenes/A5_T9.png" alt="Tamaño maximo de disco duro" width="80%" height="80%"><br />
+                <p>En esta ventana seleccionamos el tamaño maximo que puede tomar este espacio dinamico, al terminar
+                    seleccionamos crear</p>
+                <img src="Imagenes/A5_T10.png" alt="Tipo de disco duro" width="80%" height="80%"><br />
+                <p>Y listo se ha añadido a la ventana principal, ahora la configuracion</p>
+            </div>
+            <div class="container-fluid">
+                <h3>Configuracion de ISO en la maquina virtual</h3>
+                <strong>1.- Damos click en iniciar y nos aparecera la ventana siguiente</strong>
+                <img src="Imagenes/A5_T11.png" alt="Seleccion de ISO" width="80%" height="80%"><br />
+                <p>En esta ventana nos pedira el ISO del sistema que querramos ejecutar en la maquina virtual, para
+                    buscarlo e los archivos, usamos el boton de la carpeta con una flecha verde, en este caso usare una
+                    ISO de una version "antigua" de Kali Linux, y seleccionamos iniciar, con esto Iniciamos una
+                    instalacion como la de la actividad #3
+                </p>
+            </div>
+            <div class="container-fluid">
+                <h3>Bibliografia</h3>
+                <strong><a href="https://www.virtualbox.org/">https://www.virtualbox.org/</a></strong><br />
+                <strong><a
+                        href="https://www.kali.org/get-kali/#kali-bare-metal">https://www.kali.org/get-kali/#kali-bare-metal</a></strong><br />
+                <strong><a href="https://www.ibm.com/mx-es/cloud/learn/virtual-machines">
+                        https://www.ibm.com/mx-es/cloud/learn/virtual-machines</a></strong><br />
+            </div>
+        </div>
+    </body>
+
+</html>

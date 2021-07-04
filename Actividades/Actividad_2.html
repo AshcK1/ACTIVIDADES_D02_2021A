@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <title>Actividad 2</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="estilos_ac.css">
+    </head>
+
+    <body>
+        <div class="fondo">
+            <div class="bg-secondary black text-center">
+                <h2>HISTORIA DE LOS SISTEMAS OPERATIVOS</h2>
+            </div>
+            <div id="demo" class="carousel slide" data-ride="carousel" data-interval="10000">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                    <li data-target="#demo" data-slide-to="4"></li>
+                    <li data-target="#demo" data-slide-to="5"></li>
+                    <li data-target="#demo" data-slide-to="6"></li>
+                    <li data-target="#demo" data-slide-to="7"></li>
+                    <li data-target="#demo" data-slide-to="8"></li>
+                    <li data-target="#demo" data-slide-to="9"></li>
+                    <li data-target="#demo" data-slide-to="10"></li>
+                    <li data-target="#demo" data-slide-to="11"></li>
+                    <li data-target="#demo" data-slide-to="12"></li>
+                    <li data-target="#demo" data-slide-to="13"></li>
+                    <li data-target="#demo" data-slide-to="14"></li>
+                    <li data-target="#demo" data-slide-to="15"></li>
+                    <li data-target="#demo" data-slide-to="16"></li>
+                </ul>
+                <!-- The slideshow -->
+                <div class="carousel-inner alt">
+                    <div class="carousel-item active">
+                        <img src="Imagenes/1945.jpg" alt="Colossus Mark 2 Bletchley Park. Reconstrucción." class="img">
+                        <!-- Texto sobre imagen -->
+                        <div class="carousel-caption jumb">
+                            <h4>Primera Generación (1945-55): Tubos de vacío</h4>
+                            <p>Se empezaron a desarrollar las primeras máquinas electrónicas, como el Z3 de Konrad
+                                Zuse (1941),
+                                y la máquina de Atanasoff-Berry (1942). El flujo de cómputo de estas máquinas era
+                                controlado por switch electrónicos (relay)
+                                , construidos mediante tubos de vacío (vacuum tube). Al estar compuestas por cientos
+                                o miles de estos tubos, no era extraño
+                                que uno o varios fallaran durante la operación.</p>
+                            <p> Algunas de estas máquinas eran programables, si bien no todas eran de
+                                "propósito general". En 1944, un grupo de científicos en Bletchley Park, Inglaterra,
+                                entre los que se encontraba
+                                Alan Turing, construyó el computador Colossus, cuyo modelo más conocido, el Colossus
+                                Mark 2, utilizaba 2400 tubos de vacío.
+                                Este computador, si bien, tampoco era de "propósito general" ya que fue diseñado
+                                para una tarea criptográfica particular, sí era
+                                programable mediante cintas de papel. Fue importante en el proceso de decriptación
+                                del criptosistema alemán Lorenz.</p>
+                            <p>En 1946, William Mauchley y J. Presper Eckert construyeron, en la Universidad de
+                                Pennsylvania uno de los primeros computadores
+                                programables de propósito general: el ENIAC (Electronic Numerical Integrator and
+                                Computer). Poseía 20000 tubos de vacío,
+                                pesaba 27 toneladas, ocupaba 167m2 y consumía 150kW de electricidad. Su dispositivo
+                                de entrada era un lector de tarjetas
+                                perforadas y su salida era un perforador de tarjetas (IBM 405). Poseía un clock de
+                                100kHz, y utilizaba 20 registros de 10
+                                dígitos binarios. No existía un lenguaje de programación, ni siquiera assembler, de
+                                manera que toda la computación era
+                                descrita en las tarjetas perforadas mediante código de máquina.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="Imagenes/1955.jpg" alt=" IBM7094." class="img">
+                        <!-- Texto sobre imagen -->
+                        <div class="carousel-caption jumb">
+                            <h4>Segunda Generación (1955-65): Transistores y Sistemas Batch</h4>
+                            <p>La creación de los transistores en los años 1950 revolucionó la construcción de los
+                                dispositivos electrónicos
+                                reduciendo drásticamente las tasas de falla respecto al hardware construido con
+                                tubos de vacío y aumentando la velocidad de
+                                respuesta. Se empezaron a construir grandes computadores basados en transistores,
+                                conocidas como mainframes. Debido a su costo de
+                                construcción, un computador de este tipo era solamente accesible para grandes
+                                corporaciones, gobiernos y universidades.</p>
+                            <p>Un programa escrito en FORTRAN sobre tarjetas perforadas es entregado como input a un
+                                lector de tarjetas. El lector de
+                                tarjetas escribe sobre una cinta que se entrega a la máquina principal, la cual
+                                ejecuta las instrucciones, proceso que podía
+                                tardar horas dependiendo de la complejidad del cómputo, y escribe el resultado sobre
+                                otra cinta de salida. La cinta de salida
+                                es leída por otro dispositivo capaz de imprimir el contenido de la cinta a un papel.
+                                En ese momento termina la ejecución
+                                del job.</p>
+                            <p>Este tipo de computadores se usó principamente para cómputo científico y de
+                                ingeniería.
+                                Los programas que permitían a estos computadores procesar secuencialmente una
+                                cantidad de jobs fueron algunos de los
+                                primeros en cumplir la tarea de un sistema operativo, como FMS (FORTRAN Monitor
+                                System, básicamente un compilador de FORTRAN),
+                                y el sistema del IBM 7094, IBSYS.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="Imagenes/1965.jpg" alt="IBM360" class="img">
+                        <!-- Texto sobre imagen -->
+                        <div class="carousel-caption jumb">
+                            <h4>Tercera Generación (1965-1980): Circuitos Integrados y Multiprogramación</h4>
+                            <p>En los años 1960s, los mainframes de IBM (International Business Machines
+                                Corporation), la compañía constructora de
+                                equipamiento computacional más importante de la época, requerían cada uno un
+                                software y periféricos distintos para funcionar,
+                                ya que las instrucciones no eran compatibles. Un programa hecho para un modelo debía
+                                ser reescrito ante la introducción de
+                                un nuevo modelo de hardware. La compañía decide unificar el hardware bajo una
+                                familia llamada System/360. Ésta fue la primera
+                                línea importante basada en la nueva tecnología de circuitos integrados capaz de
+                                integrar grandes cantidades de pequeños
+                                transistores, lo que proporcionaba una enorme ventaja precio/rendimiento respecto a
+                                los transistores tradicionales.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="Imagenes/1975.jpg" alt="IBM360" class="img">
+                        <!-- Texto sobre imagen -->
+                        <div class="carousel-caption jumb">
+                            <h5>OS/360, y la multiprogramación</h5>
+                            <p>La idea de tener una línea de hardware mutuamente compatible y de propósito general
+                                requería un sistema capaz de
+                                funcionar en todos los modelos. Este sistema fue el OS/360. El software resultante
+                                resultó enormemente grande
+                                (millones de líneas de assembler) y complejo de desarrollar, con numerosos bugs</p>
+                            <p>A pesar de todos sus defectos, OS/360 fue ampliamente usado, e introdujo algunas
+                                ideas clave en los sistemas computacionales.
+                                Sistemas como el IBM 7094 eran máquinas que procesaban un trabajo simultáneamente.
+                                Si alguna instrucción de ese trabajo
+                                requería una lectura de cinta, o alguna operación de I/O, la CPU debía esperar sin
+                                hacer nada (idle) hasta que la operación
+                                terminase.</p>
+                            <p>La solución fue dividir el espacio de memoria en regiones, y asignar un espacio
+                                distinto a cada job.
+                                Se introdujo un mecanismo que permitiera que, cada vez que un job estuviese
+                                esperando una operación de I/O, el sistema
+                                permitiera que otro job pudiese ocupar la CPU. De esta manera, si hay suficiente
+                                jobs en la memoria, sería posible mantener
+                                a la CPU trabajando casi el 100% del tiempo. Este mecanismo fue un enorme avance que
+                                ocupamos hasta el día de hoy, y se llama
+                                multiprogramación. Implementar multiprogramación requiere que cada job pueda
+                                funcionar de manera aislada de
+                                los demás. Se agregó en el hardware el mecanismo necesario para proveer esta
+                                protección y evitar que un job
+                                malicioso pudiese leer o escribir en memoria asignada a otro job.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="Imagenes/multics.jpg" alt="MULTICS. MULTiplexed Information and Computing Service. "
+                            class="img">
+                        <!-- Texto sobre imagen -->
+                        <div class="carousel-caption jumb">
+                            <h4>Timesharing para múltiples usuario</h4>
+                            <p>La siguiente innovación apuntó a mejorar esta situación. Si un usuario escribe código
+                                durante un minuto,
+                                y luego piensa (o se para, o toma café) durante 20 segundos, se podría permitir a
+                                otro usuario que interactuara
+                                con el computador durante esos 20 segundos. La misma idea de la multiprogramación,
+                                sin embargo los humanos no son tan rápidos
+                                para cambiar de posición frente al teclado. Se le asignó entonces un terminal
+                                (consola) online a cada usuario: una cantidad de
+                                dispositivos con teclado conectados al mismo sistema, y se configuró para que, en
+                                cuanto un terminal dejaba de recibir comandos
+                                o ejecutar algún trabajo, el sistema pasara a atender al siguiente terminal. De esta
+                                manera, si un usuario no estaba interactuando
+                                con el computador, el procesador podía atender a otro. Nacieron desde aquí los
+                                sistemas de timesharing
+                                ("compartición" de tiempo).</p>
+                            <p>Construir un sistema de timesharing era inviable en los computadores previos a esta
+                                época, ya que se requería almacenar
+                                el estado de un proceso y recuperar el estado del proceso siguiente (esto se llama
+                                context switch o cambio de contexto) lo
+                                que podía ser costoso en tiempo. Sin embargo, la tecnología de esos años ya había
+                                evolucionado para permitir que este método
+                                fuera viable. Los sistemas consultaba alternadamente a cada terminal si éste tenía
+                                un comando que ejecutar, lo que se conoce
+                                como polling. Un problema, aún no resuelto en estos sistemas, era que si un usuario
+                                enviaba un trabajo largo de tipo CPU-bound
+                                (una compilación, un cálculo matricial, ordenar miles de registros, …), los demás
+                                usuarios tendrían que esperar hasta que este
+                                proceso terminara antes de obtener su espacio (slice) de tiempo. Este problema sería
+                                resuelto en los sistema posteriores con
+                                la introducción del multitasking expropiativo (preemptive multitasking) en que los
+                                trabajos reciben slices de tiempo definidas
+                                para ejecutar antes de entregar el turno forzosamente al siguiente.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="Imagenes/linux.jpg" alt="Mascota de linux" class="img">
+                        <!-- Texto sobre imagen -->
+                        <div class="carousel-caption jumb">
+                            <h4>GNU, el software libre, y Linux</h4>
+                            <p>
+                                En 1983, todas las versiones de UNIX utilizaban licencias comerciales. En MIT, Richard
+                                Stallman inicia el proyecto GNU
+                                (GNU is Not UNIX, un acrónimo recursivo) con el objetivo de desarrollar una versión
+                                completamente gratuita y de código
+                                abierto de un sistema "UNIX-like". Como parte de su proyecto se definió la GNU General
+                                Public License, GPL, se publicó
+                                el GNU Manifesto y se desarrollaron múltiples herramientas como gcc (GNU Compiler
+                                Collection), glibc (GNU C Library),
+                                coreutils (GNU Core Utilities), binutils (GNU Binary Utilities), bash (GNU Bash Shell),
+                                y el entorno de escritorio GNOME
+                                (originalmente GNU Network Object Model Environment).
+                            </p>
+                            <p>
+                                En 1987, Andrew S. Tanenbaum desarrolló un clon de UNIX llamado MINIX con fines
+                                educacionales (POSIX-compliant), un
+                                microkernel modular de código abierto con la capacidad de detectar y reemplazar
+                                dinámicamente módulos defectuosos. Todo
+                                en 13000 líneas de código.
+                            </p>
+                            <p>
+                                En 1991, ante la ausencia de un kernel gratuito de UNIX, y bajo la inspiración de MINIX,
+                                Linus Torvalds desarrolla un
+                                clon monolítico "just for fun", al cual llama Linux e incluye gran parte de las
+                                herramientas desarrolladas por el
+                                proyecto GNU. Los puristas suelen denominar al sistema operativo GNU/Linux, pues se
+                                trata de un "kernel Linux con
+                                herramientas GNU", de la misma manera que GNU/Hurd sería un kernel Hurd con herramientas
+                                GNU".
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="Imagenes/altair.jpg" alt="MITS Altair 8800" class="img">
+                        <!-- Texto sobre imagen -->
+                        <div class="carousel-caption jumb">
+                            <h4>Cuarta Generación (1980-Presente): Computadores personales</h4>
+                            <p>
+                                El desarrollo tecnológico de los circuitos integrados llegó al nivel conocido como VLSI
+                                (Very Large Scale Integration),
+                                capaz de integrar hasta 1 millón de transistores en un chip de 1cm2, lo que permitía
+                                hasta 100000 celdas lógicas.
+                                Surgieron sistemas computacionales de uso personal denominados microcomputadores, que en
+                                principio no eran
+                                tecnológicamente muy superiores al PDP-11, pero a un precio notablemente inferior.
+                            </p>
+                            <h5>Intel 8080, CP/M y el despegue de los microcomputadores</h5>
+                            <p>
+                                En 1974, Intel presenta el chip Intel 8080, una CPU de propósito general de 8-bit con un
+                                clock de 2MHz, sucesora del
+                                4004 y el 8008, los primeros microprocesadores del mercado. Fue parte del popular MITS
+                                Altair 8800, que dió inicio a la
+                                era de los microcomputadores.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="Imagenes/cpu.jpg" alt="by Konstantin Lanzet - CPU collection Konstantin Lanzet"
+                            class="img">
+                        <!-- Texto sobre imagen -->
+                        <div class="carousel-caption jumb">
+                            <h4>IBM PC y la masificación de Microsoft DOS</h4>
+                            <p>
+                                el IBM Personal Computer (IBM PC) basado en el Intel 8088 de 16-bit, 4.77MHz de clock, y
+                                hasta 256 kB de RAM. En 1980,
+                                IBM contactó a una pequeña compañía de nombre Microsoft fundada por Bill Gates y Paul
+                                Allen en 1975, y conocida por
+                                desarrollar un intérprete del lenguaje BASIC para el popular Altair 8800.
+                            </p>
+                            <p>
+                                Microsoft logró un acuerdo con SCP para distribuir, y posteriormente adquirir todos los
+                                derechos sobre 86-DOS llamándolo
+                                MicroSoft Disk Operating System (MS-DOS). Este sistema operativo, junto al intérprete de
+                                BASIC fueron ofrecidos a IBM.
+                                Microsoft contrató a Tim Paterson para realizar algunas modificaciones y finalmente el
+                                IBM PC fue lanzado junto al
+                                sistema operativo renombrado por IBM como PC-DOS. Debido a que, en el fondo, PC-DOS
+                                había nacido como un clon de CP/M y
+                                para evitar problemas legales, IBM eventualmente distribuyó su IBM PC también con
+                                CP/M-86. Sin embargo, CP/M-86 había
+                                llegado 6 meses tarde y en ese tiempo la popularidad de PC-DOS creció rápidamente.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="Imagenes/msdos.jpg" alt="logo" class="img">
+                        <!-- Texto sobre imagen -->
+                        <div class="carousel-caption jumb">
+                            <p>
+                                Microsoft, sin embargo, nunca entregó los derechos sobre MS-DOS, sino que solo entregó
+                                una licencia a IBM. El IBM PC fue
+                                tremendamente exitoso y, salvo la componente de arranque BIOS (Basic Input/Output
+                                System) que era propietaria de IBM, el
+                                resto era una arquitectura abierta (a diferencia de Apple que patentó componentes
+                                cruciales de su hardware).
+                            </p>
+                            <p>
+                                Dado que el sistema operativo no era propiedad de IBM, cada constructor podía obtener
+                                una licencia de MS-DOS desde
+                                Microsoft para incluirla en su propio sistema. Esto posicionó a Microsoft como líder en
+                                el mercado de los sistemas
+                                operativos, y desplazó definitivamente a CP/M y Digital Research Inc. Años después, en
+                                1996, Digital Research Inc., en
+                                ese tiempo parte de la empresa Caldera Inc. (y previamente de Novell), demandaría a
+                                Microsoft por prácticas
+                                anti-competitivas respecto a DR-DOS, un sucesor de CP/M-86, y en favor de sus productos
+                                MS-DOS, Windows 95 y Windows 98.
+                            </p>
+                            <p>
+                                El año 2000 se llegó a un acuerdo bajo el cual Microsoft Corp. compensó parcialmente a
+                                Caldera Inc. Parte del legado de
+                                CP/M en MS-DOS incluía el formato de nombre de archivos de 8.3 (8 caracteres para el
+                                nombre, y 3 para la extensión), y
+                                la manera de nombrar las unidades de disco como A:, B:, C:, …
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="Imagenes/apnew.jpg" alt="Apple Newton (1993)" class="img">
+                        <!-- Texto sobre imagen -->
+                        <div class="carousel-caption jumb">
+                            <h4>Quinta Generación (1990-Presente): Computadores Móviles</h4>
+                            <p>
+                                Hasta 1993, los dispositivos telefónicos móviles no era más que dispositivos de
+                                comunicación que usaban sistemas
+                                embebidos, dedicados, para administrar su hardware. El concepto de utilizar estos
+                                dispositivos para realizar actividades
+                                más allá de la telefonía surgió con los dispositivos conocidos como PDA (Personal
+                                Digital Assistant), entre los cuales
+                                se encuentra el Apple Newton que incluía un sistema operativo Newton OS escrito en C++,
+                                y con un pionero uso de
+                                reconocimiento de escritura manual. Poseía una API para aplicaciones desarrolladas por
+                                terceros, sin embargo no obtuvo
+                                gran adopción.
+                            </p>
+                            <p>
+                                Talvez el primer dispositivo llamado un smartphone fue el IBM Simon, con una interfaz de
+                                pantalla touch (con stylus) y
+                                un sistema operativo ROM-DOS, compatible con MS-DOS y desarrollado por la empresa
+                                Datalight. Su batería de una hora de
+                                duración no le permitió competir con los nuevos dispositivos
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/palm.jpeg" alt="Palm Pilot (1997)" class="img">
+                        <!-- Texto sobre imagen -->
+                        <div class="carousel-caption jumb">
+                            <h4>Palm, Inc. y el Palm OS</h4>
+                            <p>
+                                Fue en 1997 que la ya extinta compañía Palm, Inc. popularizó los dispositivos PDA
+                                mediante su PalmPilot, y su sistema
+                                operativo Palm OS 2.0 como el primer sistema operativo móvil exitoso. Incorporaba el
+                                sistema Graffiti de reconocimiento
+                                de escritura manual, y el stack de protocolos TCP/IP para soportar sincronización por
+                                red en lugar de cable serial.
+                            </p>
+                            <p>
+                                Palm OS introdujo paulatinamente características modernas acorde a la evolución de los
+                                dispositivos como soporte para el
+                                stack WiFi (IEEE 802.11), Bluetooh, y desde 2004 con Palm OS 6.0 (Cobalt), un kernel con
+                                multitasking y protección de
+                                memoria.
+                            </p>
+                            <p>
+                                En 2009, Palm, Inc. intentó ponerse al día en la competencia por el mercado
+                                móvil con el desarrollo de webOS.
+                                Palm, Inc. sería adquirido por HP al año siguiente y el desarrollo de webOS no se vería
+                                impulsado hasta al menos dos
+                                años más cuando el código de webOS se publicó de manera abierta. Finalmente HP licencia
+                                el uso de webOS a LG para
+                                incorporarlo en sus dispositivos smartTV.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/sym.jpg" alt="SymbianOS" class="img">
+                        <!-- Texto sobre imagen -->
+                        <div class="carousel-caption jumb">
+                            <h4>Nokia y SymbianOS</h4>
+                            <p>
+                                El éxito de Palm llevó a otros protagonistas de la telefonía móvil como Nokia a
+                                co-fundar y posteriormente adquirir
+                                completamente a Symbian Ltd.. El consorcio fundador incluía a Psion, una compañía que
+                                estaba detrás de EPOC, un sistema
+                                operativo single-user de 32-bit con preemptive multitasking del año 1998, que bajo
+                                Symbian se convertiría en Symbian OS
+                                cuya primera versión (6.0) fue utilizada en el Nokia 9210 Communicator. Symbian OS
+                                corría sobre procesadores ARM, una
+                                arquitectura RISC.
+                            </p>
+                            <p>
+                                Durante los años 2005 al 2010 y previo a la consolidación de Android existieron diversos
+                                esfuerzos por generar una
+                                plataforma opensource basada en el kernel de Linux. Nokia tuvo su intento propio con
+                                Maemo, un kernel monolítico basado
+                                en Debian GNU/Linux y con interfaz basada en GNOME para arquitecturas ARM. Previo a la
+                                adopción de Windows Phone, Nokia
+                                abandona Maemo y, en conjunto con Linux Foundation e Intel crea la distribución MeeGo
+                                con la intención de servir de
+                                plataforma para dispositivos como smartphones, tablets, smartTVs y netbooks. MeeGo nace
+                                como una mezcla de las
+                                plataformas de Nokia (Maemo) y una que estaba desarrollando Intel (Moblin, que a su vez
+                                estaba basado en Fedora). Sin
+                                embargo, en 2011, cuando Nokia adopta Windows Phone, abandona MeeGo. A partir de MeeGo,
+                                Intel se une con Samsung y Linux
+                                Foundation para desarrollar Tizen. En una línea paralela, la compañía finlandesa Jolla
+                                aprovecha el código opensource de
+                                Mer, un fork de MeeGo y desarrolla Sailfish OS, un kernel monolítico con compatibilidad
+                                para Android mediante APIs,
+                                soporte para ARM y x86-64, y un fuerte énfasis en multitasking.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/wce.jpg" alt="Windows CE" class="img">
+                        <!-- Texto sobre imagen -->
+                        <div class="carousel-caption jumb">
+                            <h4>Microsoft y el Windows Phone</h4>
+                            <p>
+                                Microsoft había desarrollado desde 1996 un sistema operativo embebido llamado Windows CE
+                                (actualmente Windows Embedded
+                                Compact) diseñado para una especificación de plataformas incialmente denominado Pocket
+                                PC. Los primeros dispositivos con
+                                Windows CE se lanzaron en 2002.
+                            </p>
+                            <p>
+                                Windows CE contenía un kernel híbrido escrito en C y soportaba arquitecturas x86, ARM,
+                                MIPS y PowerPC.
+                            </p>
+                            <p>
+                                La serie de sistemas operativos móviles basados en Windows CE fue conocida como Windows
+                                Mobile (incluyendo el media
+                                player Zune) y fue desarrollado hasta 2010. Posteriormente Microsoft reimplementaría su
+                                sistema operativo móvil basado
+                                en la línea de Windows NT, dando inicio a Windows Phone, línea que fue descontinuada en
+                                2017 debido al poco interés de
+                                los desarrolladores en generar aplicaciones para esta plataforma ante la dominancia de
+                                iOS y Android.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/rimb.jpg" alt="Logo RIM/Blackberry" class="img">
+                        <!-- Texto sobre imagen -->
+                        <div class="carousel-caption jumb">
+                            <h4>RIM y Blackberry OS</h4>
+                            <p>
+                                En 2002 la compañía canadiense Research In Motion (RIM) desarrolló su propia línea de
+                                dispositivos móviles conocidos
+                                como BlackBerry y su propio sistema operativo BlackBerry OS (RIM con el tiempo cambiaría
+                                su nombre a BlackBerry Ltd.).
+                            </p>
+                            <p>
+                                BlackBerry OS era un sistema multitasking con soporte para aplicaciones mediante la
+                                plataforma especial para
+                                dispositivos embebidos Java Micro Edition (JavaME). Incluía soporte para WAP, un stack
+                                de protocolos de comunicación
+                                para móviles que dejó de ser adoptado cuando los dispositivos móviles fueron
+                                suficientemente poderosos para procesar el
+                                tradicional stack TCP/IP.
+                            </p>
+                            <p>
+                                En 2010, BlackBerry OS fue reemplazado por BlackBerry 10, un sistema basado en el
+                                microkernel de tiempo real (RTOS) QNX.
+                                Desde 2016, los dispositivos producidos por BlackBerry empezaron a usar Android en lugar
+                                de BlackBerry 10, cuyo soporte
+                                ha sido anunciado al menos hasta 2019.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/iphone.jpg" alt="Apple iphone" class="img">
+                        <!-- Texto sobre imagen -->
+                        <div class="carousel-caption jumb">
+                            <h4>Apple: el iPhone y iOS</h4>
+                            <p>
+                                l año 2007 ocurrió la entrada de uno de los principales competidores cuando Apple
+                                presentó su iPhone junto con su
+                                sistema operativo iOS (originalmente iPhone OS). iOS, al igual que MacOSX se basa en el
+                                kernel híbrido XNU y el sistema
+                                operativo (UNIX-like) Darwin.
+                            </p>
+                            <p>
+                                Desde el año 2010, con iOS 4, el sistema añadió soporte de APIs para multitasking por
+                                parte de aplicaciones de usuario.
+                                Previamente el multitasking estaba restringido solo a ciertos servicios del sistema. La
+                                disponibilidad del iOS SDK
+                                (Software Development Kit) atrajo el desarrollo de múltiples aplicaciones nativas
+                                disponibles desde una tienda online
+                                (App Store), popularizando rápidamente el uso del iPhone y posicionándolo como uno de
+                                los principales competidores.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/android.jpg" alt="Logo de android" class="img">
+                        <!-- Texto sobre imagen -->
+                        <div class="carousel-caption jumb">
+                            <h4>Android, la entrada de Google</h4>
+                            <p>
+                                Meses después del lanzamiento del primer iPhone, un conjunto de compañías lideradas por
+                                Google, incluyendo a HTC, Sony,
+                                Dell, Intel, Motorola, Samsung, LG, Nvidia, entre otros, forman la Open Handset Alliance
+                                (OHA). Con el soporte de OHA,
+                                Google lanza en 2008 la primera versión de Android, un sistema operativo monolítico
+                                (UNIX-like) de código abierto basado
+                                en el kernel Linux. Android inició su desarrollo bajo la compañía Android, Inc. fundada
+                                en 2003.
+                            </p>
+                            <p>
+                                El año 2005 Google adquirió Android, Inc. y fue bajo su alero que el equipo de
+                                desarrollo terminó la primera versión
+                                Android 1.0. De manera similar a App Store, Android lanzó el Android Market (más tarde
+                                Google Play Store), y el Android
+                                SDK para el desarrollo de aplicaciones (escritas principalmente en Java, y recientemente
+                                en Kotlin) para terceros. El
+                                soporte de OHA, integrado por importantes actores del mercado smartphone fue clave para
+                                posicionar a Android como el
+                                sistema operativo dominador en los dispositivos móviles desde el año 2010, con iOS como
+                                su único (y distante) competidor
+                                real.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/sis.jpg" alt="Logo de android" class="img">
+                        <!-- Texto sobre imagen -->
+                        <div class="carousel-caption jumb">
+                            <h4>Bibliografia</h4>
+                            <p>https://www.preceden.com/timelines/54847-linea-del-tiempo-de-sistemas-operativos</p>
+                            <p>http://iic2333.ing.puc.cl/activities/history.html</p>
+                            <p>Tanenbaum, "Modern Operating Systems", 4th Ed. Sección 1.2.</p>
+                            <p>https://www.fib.upc.edu/retro-informatica/historia/so.html</p>
+                            <p>https://rua.ua.es/dspace/bitstream/10045/54704/2/ci2_basico_2015-16_Sistemas_operativos.pdf
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+
+        </div>
+    </body>
+
+</html>

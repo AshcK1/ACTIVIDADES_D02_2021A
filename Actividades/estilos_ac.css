@@ -1,0 +1,38 @@
+.fondo {
+    height: 566px;
+    background: rgb(161, 2, 2);
+    background: radial-gradient(
+        circle,
+        rgba(161, 2, 2, 0.8617646887856705) 0%,
+        rgba(121, 9, 9, 1) 65%,
+        rgba(65, 0, 0, 1) 100%
+    );
+}
+
+.jumb {
+    background: rgba(0, 0, 0, 0.5) !important;
+    color: white;
+}
+
+.img {
+    padding-left: 10%;
+    width: 90%;
+    height: 486px;
+}
+
+.input_co {
+    width: 80%;
+    background-color: dimgray;
+    color: white;
+    border-radius: 5px;
+}
+
+.bg {
+    background: rgb(161, 2, 2);
+    background: radial-gradient(
+        circle,
+        rgba(161, 2, 2, 0.8617646887856705) 0%,
+        rgba(121, 9, 9, 1) 65%,
+        rgba(65, 0, 0, 1) 100%
+    );
+}

@@ -1,0 +1,73 @@
+.fondo {
+    padding-top: 100px;
+    height: 590px;
+    background: rgb(161, 2, 2);
+    background: radial-gradient(
+        circle,
+        rgba(161, 2, 2, 0.8617646887856705) 0%,
+        rgba(121, 9, 9, 1) 65%,
+        rgba(65, 0, 0, 1) 100%
+    );
+}
+
+.jumb {
+    background: rgba(0, 0, 0, 0.4) !important;
+    color: white;
+}
+
+.separador {
+    height: 103px;
+}
+
+.am {
+    background-image: url(https://i.ytimg.com/vi/57LFFAsxSno/maxresdefault.jpg);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.port {
+    height: 650px;
+}
+
+.navbar-dark {
+    background-color: rgb(83, 6, 6);
+    color: white;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: rgb(83, 6, 6);
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border-style: none none none dotted;
+    border-width: 1px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgb(153, 4, 4);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: rgb(168, 32, 32);
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-top: none;
+}
