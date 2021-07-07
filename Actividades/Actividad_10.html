@@ -1,6 +1,40 @@
-1.- Realizar un programa con la demostración del problema de los filósofos comensales haciendo la propuesta de una
-solución en un reporte bien documentado.
-2.- Enviar el documento con la investigación y el programa (fuente y compilado) .
-3.- Enviar un archivo/programa al buzón de la actividad con las siguientes características: Apellidos_nombre_actividad
-por ejemplo Moreno_Javier_act10
-4.- No olviden Bibliografía en formato APA y sus conclusiones a la actividad.
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Actividad 10</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="estilos_ac.css">
+    </head>
+
+    <body>
+        <div class="bg text-white">
+            <h3>Filósofos comensales</h3>
+            <a href="filosofos_comensales.rb">Codigo</a>
+            <p>
+                El problema de la cena de los filósofos o problema de los filósofos cenando (dining philosophers
+                problem) es un problema clásico de las ciencias de la computación propuesto por Edsger Dijkstra en 1965
+                para representar el problema de la sincronización de procesos en un sistema operativo.<br />
+                Cinco filósofos se sientan alrededor de una mesa y pasan su vida cenando y pensando. Cada filósofo tiene
+                un plato de fideos y un tenedor a la izquierda de su plato. Para comer los fideos son necesarios dos
+                tenedores y cada filósofo sólo puede tomar los que están a su izquierda y derecha. Si cualquier filósofo
+                toma un tenedor y el otro está ocupado, se quedará esperando, con el tenedor en la mano, hasta que pueda
+                tomar el otro tenedor, para luego empezar a comer. <br />
+                Si dos filósofos adyacentes intentan tomar el mismo tenedor a una vez, se produce una condición de
+                carrera: ambos compiten por tomar el mismo tenedor, y uno de ellos se queda sin comer.<br />
+                Si todos los filósofos toman el tenedor que está a su derecha al mismo tiempo, entonces todos se
+                quedarán esperando eternamente, porque alguien debe liberar el tenedor que les falta. Nadie lo hará
+                porque todos se encuentran en la misma situación (esperando que alguno deje sus tenedores). Entonces los
+                filósofos se morirán de hambre. Este bloqueo mutuo se denomina interbloqueo o deadlock.
+                El problema consiste en encontrar un algoritmo que permita que los filósofos nunca se mueran de hambre.
+            </p>
+
+        </div>
+    </body>
+
+</html>

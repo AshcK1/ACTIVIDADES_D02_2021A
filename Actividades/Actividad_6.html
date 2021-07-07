@@ -1,6 +1,110 @@
-1.- Investigar sobre particiones en disco así como sus ventajas y desventajas, además de listar las diversas
-herramientas que existen para realizar estas particiones. Practicar cuando menos en dos herramientas. Documentar.
-2.- Documentar la investigación en un documento video, pdf, presentación o web,.
-3.- Enviar un archivo al buzón de la actividad con las siguientes características: Apellidos_nombre_actividad por
-ejemplo Moreno_Javier_act6
-4.- No olviden Bibliografía en formato APA y sus conclusiones a la actividad.
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Actividad 6</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="estilos_ac.css">
+    </head>
+
+    <body>
+        <div class="bg text-white">
+            <h3>Particiones en disco</h3>
+            <div class="container-fluid">
+                <h4>¿Que son las particiones en disco?</h4>
+                <p>
+                    Una partición es el nombre que se le da a cada división presente en una sola unidad física de
+                    almacenamiento de datos.
+                    Para que se entienda, tener varias particiones es como tener varios discos duros en un solo disco
+                    duro físico, cada uno con su sistema de archivos y funcionando de manera diferente.
+                </p>
+                <h4>¿Para que se puede utilizar?</h4>
+                <strong>
+                    1.- Particiones para datos personales<br />
+                    2.- Copias de seguridad<br />
+                    3.- Tener diferentes sistemas operativos
+                </strong>
+                <h4>Existen 3 tipos de particiones:</h4>
+                <strong>Partición primaria: </strong>
+                <p>
+                    Son las divisiones primarias del disco que dependen de una tabla de particiones, y son las que
+                    detecta el ordenador al arrancar, en este tipo de particiones se instalan los sistemas operativos.
+                </p>
+                <strong>Partición secundaria: </strong>
+                <p>
+                    Este tipo de particion solo se puede usar para almacenar datos
+                </p>
+                <strong>Partición lógica: </strong>
+                <p>
+                    Este tipo de particion se hace dentro de una particion secundaria, funciona como si fueran
+                    dispositivos independientes y se utilizar para almacenar cualquier archivo
+                </p>
+                <h4>Ventajas y Desventajas</h4>
+                <strong>Ventajas: </strong>
+                <p>
+                    1.- Tener los datos del usaurio en una parte segura del disco por si llega a fallar el sistema
+                    operativo<br />
+                    2.- Tener uno o mas sistemas operativos en el disco<br />
+                </p>
+                <strong>Desventajas: </strong>
+                <p>
+                    1.- En caso de falla en el disco se pueden afectar las particiones<br />
+                    2.- Se podria generar un desgaste a largo plazo en el motor de la aguja en el disco duro
+                </p>
+            </div>
+            <div class="container-fluid">
+                <h3>Herramientas para crear particiones</h3>
+                <h4>GParted</h4>
+                <img src="Imagenes/A61.png" alt="GParted" width="80%" height="80%">
+                <p>
+                    GParted es una aplicacion del sistema en linux, al abrirla nos aparecera la distribucion de
+                    particiones pre determinadas, en este caso yo ya cuento con 3 particiones primarias, dos para
+                    sistemas operativos y una para mis archivos (207.52 GB para windows, 97.66 para mis archivos, y
+                    140.04 para el sistema Kali linux)
+                </p>
+                <strong>¿Como se crea una partición?</strong>
+                <p>
+                    <strong>1.- Se comienza con seleccionar el volumen que se debe reducir, en este caso hare mas
+                        pequeño el disco para windows (sda5), por lo que daremos click derecho sobre ella y despues en
+                        redimensionar</strong><br /><br />
+                    <img src="Imagenes/A62.png" alt="Particion" width="80%" height="80%"><br /><br />
+                    <strong>2.- Abrira esta ventana donde lo que debemos cambiar es "Espacio libre a continuacion"
+                    </strong><br /><br />
+                    <img src="Imagenes/A63.png" alt="" width="80%" height="80%"><br /><br />
+                <p>Al seleccionar un tamaño, la barra superior habra cambiado de tamaño</p><br /><br />
+                <strong>3.- Al terminar seleccionamos Redimensionar/mover</strong>
+                <p>Lo que creara una particion vacia entre el sd5 y el sda6</p>
+                <img src="Imagenes/A64.png" alt="" width="80%" height="80%"><br /><br />
+                <strong>4.- Ahora toca asignarle las propiedades, damos click derecho y seleccionamos nueva</strong>
+                <img src="Imagenes/A65.png" alt="" width="80%" height="80%"><br /><br />
+                <p>En este caso usare los valores predeterminados para que linux pueda accesar a el sin problemas</p>
+                <img src="Imagenes/A66.png" alt="" width="80%" height="80%"><br /><br />
+                <strong>5.- Mostrara la particion con sus detalles, para finalizar precionamos la "palomita" en la parte
+                    superior izquierda para aplicar los cambios al disco</strong>
+                <img src="Imagenes/A67.png" alt="" width="80%" height="80%"><br /><br />
+                <p>Nos mostrara un dialogo para confirmar y aplicamos los cambios, con lo que se aplicaran los cambios
+                    como acontinuacion</p>
+                <img src="Imagenes/A69.png" alt="" width="80%" height="80%"><br /><br />
+                <p>Al terminar mostrara el siguiente dialogo</p>
+                <img src="Imagenes/A610.png" alt="" width="80%" height="80%"><br /><br />
+                <p>Y listo ha terminado y ahi podemos ver la particion</p>
+                <img src="Imagenes/A611.png" alt="" width="80%" height="80%"><br /><br />
+                </p>
+            </div>
+            <div class="container-fluid">
+                <h3>Bibliografia</h3>
+                <strong>
+                    <a
+                        href="https://www.xataka.com/basics/particiones-de-disco-duro-que-son-y-como-hacerlas-en-windows">
+                        https://www.xataka.com/basics/particiones-de-disco-duro-que-son-y-como-hacerlas-en-windows</a>
+                </strong>
+            </div>
+        </div>
+    </body>
+
+</html>
