@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Actividad 11</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="estilos_ac.css">
+    </head>
+
+    <body>
+        <div class="bg text-white">
+            <h4>Exclusión Mutua</h4>
+            <p>
+            <h4>¿Qué problemas tiene?</h4>
+            La mayoría de los métodos de exclusión mutua clásicos intentan reducir la latencia y espera activa
+            mediante las colas y cambios de contexto.<br />
+            Muchas técnicas de exclusión mutua tienen efectos colaterales. Por ejemplo:<br />
+            - Los semáforos: permiten interbloqueos (deadlocks) en los que un proceso obtiene un semáforo, otro
+            proceso obtiene el semáforo y ambos se quedan a la espera de que el otro proceso libere el
+            semáforo.<br />
+            Otros efectos comunes:<br />
+            - La espera activa consume tiempo del procesador.<br />
+            - Puede producirse inanición cuando un proceso abandona la sección crítica y hay más de un proceso
+            esperando.<br />
+            - Interbloqueo:de procesos de baja prioridad frente a otros de prioridad mayor.<br />
+            </p>
+            <h4>Reglas de las soluciones</h4>
+            <p>
+                Para que una solución al problema de la exclusión mutua sea válida, se tienen que cumplir una serie de
+                condiciones:<br />
+                Dos procesos no deben encontrarse al mismo tiempo dentro de una SC con el mismo recurso compartido.
+                No se deben hacer hipótesis sobre la velocidad y número de CPU.<br />
+                Ningún proceso que esté en ejecución fuera de su sección crítica puede bloquear a otros procesos.<br />
+                Ningún proceso debe esperar de manera ilimitada para entrar a su sección crítica.<br />
+            </p>
+            <div class="container-fluid">
+                <h4>Soluciones de hardware</h4>
+                <p>
+                <h5>Optimistas.</h5>
+                Consideran que lo más probable es que no haya conflictos, y si los hay sea en número reducido, por
+                lo que permiten cualquier acceso a la variable compartida. En caso de conflicto, mantienen la integridad
+                del sistema descartando las actualizaciones.<br />
+
+                <h5>Pesimistas.</h5>
+                Bloquean todo aquello que pueda interferir.<br />
+                Actualiza la variable. <br />
+                Desbloquean lo bloqueado al principio.<br />
+                </p>
+                <h4>Soluciones de software</h4>
+                <p>
+                    Algoritmos de Dijkstra (Semáforos)<br />
+                    Algoritmo de Dekker (5 versiones): algoritmo que se ejecuta cuando dos procesos tratan de ingresar a
+                    la zona crítica y este decide el turno de ejecución de cada proceso.<br />
+                    Algoritmo de Peterson (simplificación de dekker): maneja la comunicación por memoria compartida, si
+                    un proceso entra a zona crítica se activa una bandera que impide a otro entrar a la zona crítica.
+                </p>
+                <h4>Problema productor consumidor</h4>
+                <p>
+                    El problema Productor/Consumidor consiste en el acceso concurrente por parte de procesos productores
+                    y procesos consumidores sobre un recurso común que resulta ser un buffer de elementos. Los
+                    productores tratan de introducir elementos en el buffer de uno en uno, y los consumidores tratan de
+                    extraer elementos de uno en uno.
+                    <br />
+                    Para asegurar la consistencia de la información almacenada en el buffer, el acceso de los
+                    productores y consumidores debe hacerse en exclusión mutua. Adicionalmente, el buffer es de
+                    capacidad limitada, de modo que el acceso por parte de un productor para introducir un elemento en
+                    el buffer lleno debe provocar la detención del proceso productor. Lo mismo sucede para un consumidor
+                    que intente extraer un elemento del buffer vacío.<br />
+                    Se desea resolver el problema del productor-consumidor usando semáforos para enviar y recibir. Hay
+                    un solo emisor y un solo receptor y las operaciones que realizan son enviar y recibir
+                    respectivamente.
+                </p>
+                <a href="productor_consumidor.rb">Codigo Fuente (no pude hacerlo)</a>
+            </div>
+        </div>
+    </body>
+
+
+</html>
